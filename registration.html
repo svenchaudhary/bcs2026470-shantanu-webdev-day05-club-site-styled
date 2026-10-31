@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register your interest in joining Campus Connect.">
+  <title>Join Us | Campus Connect</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">CC</span>
+      <span>Campus Connect<small>Invertis University</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="registration.html">Join Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">COME BE PART OF IT</p>
+      <h1>Find your people.<br><span>Bring your ideas.</span></h1>
+      <p>Interested in joining or volunteering? Fill out the sample form below to tell us a little about yourself.</p>
+    </section>
+
+    <section class="section form-layout">
+      <div class="form-intro">
+        <p class="eyebrow">MEMBERSHIP</p>
+        <h2>Your campus story starts <span>here.</span></h2>
+        <p>Whether you want to attend events, help organize activities, or share your own ideas, there's room to get involved.</p>
+
+        <div class="info-note">
+          <span>✦</span>
+          <div>
+            <strong>Before you submit</strong>
+            <p>This is a front-end assignment demo. The form validates in your browser but does not send or store your information.</p>
+          </div>
+        </div>
+
+        <ul class="check-list">
+          <li>Meet other students</li>
+          <li>Explore new interests</li>
+          <li>Practice teamwork and communication</li>
+        </ul>
+      </div>
+
+      <form class="form-card" action="#" method="get">
+        <h2>Student registration</h2>
+        <p class="form-subtitle">Fields marked * are required.</p>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="full-name">Full name *</label>
+            <input id="full-name" name="full-name" type="text" placeholder="Your full name" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="student-email">College email *</label>
+            <input id="student-email" name="student-email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="password">Create password *</label>
+            <input id="password" name="password" type="password" minlength="8" placeholder="At least 8 characters" autocomplete="new-password" required>
+          </div>
+
+          <div class="field">
+            <label for="student-id">Student ID *</label>
+            <input id="student-id" name="student-id" type="number" min="1" placeholder="Your student ID" required>
+          </div>
+
+          <div class="field">
+            <label for="course">Course / department *</label>
+            <select id="course" name="course" required>
+              <option value="">Select course</option>
+              <option>B.Tech CSE</option>
+              <option>B.Tech (Other branch)</option>
+              <option>BBA</option>
+              <option>BCA</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="year">Current year *</label>
+            <select id="year" name="year" required>
+              <option value="">Choose year</option>
+              <option>1st year</option>
+              <option>2nd year</option>
+              <option>3rd year</option>
+              <option>4th year</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" pattern="[+0-9 ()-]{7,20}">
+          </div>
+
+          <div class="field">
+            <label for="birth-date">Date of birth</label>
+            <input id="birth-date" name="birth-date" type="date">
+          </div>
+
+          <div class="field">
+            <label for="portfolio">Portfolio / profile URL</label>
+            <input id="portfolio" name="portfolio" type="url" placeholder="https://example.com">
+          </div>
+
+          <div class="field">
+            <label for="available-time">Preferred meeting time</label>
+            <input id="available-time" name="available-time" type="time">
+          </div>
+
+          <fieldset class="field field-full">
+            <legend>How would you like to participate? *</legend>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="participation" value="member" required> General member</label>
+              <label class="choice"><input type="radio" name="participation" value="volunteer"> Volunteer</label>
+              <label class="choice"><input type="radio" name="participation" value="organizer"> Event organizer</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="interest">Area of interest *</label>
+            <select id="interest" name="interest" required>
+              <option value="">Choose an interest</option>
+              <option>Technology</option>
+              <option>Design and creativity</option>
+              <option>Events and management</option>
+              <option>Community activities</option>
+              <option>Communication and media</option>
+            </select>
+          </div>
+
+          <div class="field field-full">
+            <label for="skills">Skills or interests you can contribute</label>
+            <textarea id="skills" name="skills" rows="3" placeholder="For example: basic HTML/CSS, teamwork, writing, photography..."></textarea>
+          </div>
+
+          <div class="field field-full">
+            <label for="proof">Optional student profile file</label>
+            <input id="proof" name="proof" type="file" accept=".pdf,.jpg,.jpeg,.png">
+          </div>
+
+          <div class="field field-full">
+            <label class="choice">
+              <input type="checkbox" name="agreement" required>
+              I confirm that the details above are correct. *
+            </label>
+          </div>
+
+          <div class="field field-full">
+            <button class="button" type="submit">Submit interest →</button>
+            <p class="small-note">Demo only: no data is transmitted to a server.</p>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="index.html">
+      <span class="brand-mark">CC</span>
+      <span>Campus Connect<small>Invertis University</small></span>
+    </a>
+    <p>Made for students, powered by community.</p>
+    <p class="copyright">© 2026 Campus Connect · Project by Shantanu Chaudhary, B.Tech CSE · 2026 Batch</p>
+  </footer>
+</body>
+</html>
